@@ -1,0 +1,83 @@
+body {
+	margin: auto;
+	background-color: #DCDCDC;
+}
+
+.header {
+	text-align: center;
+	background: #ff9960;
+	color: white;
+	font-size: 25px;
+}
+
+#logo {
+}
+
+#webname {
+}
+
+#account-selection {
+}
+
+.nav {
+	height: 40px;
+	background-color: #CBCBCB;
+	font-size: 25px;
+	overflow: auto;
+}
+
+#homepage-button {
+}
+
+#options-button {
+}
+
+#about-us-button {
+}
+
+.page {
+	padding-top: 10px;
+	padding-bottom: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-family: verdana;
+	background-color: #ffffff;
+	float:center;
+}
+
+#page-of-day {
+	float: left;
+}
+
+#top-page {
+	float: left;
+}
+
+#readers-rating {
+	float: left;
+}
+
+#content {
+	float: left;
+}
+
+#your-rating {
+	float: left;
+}
+
+#your-comment {
+	float: left;
+}
+
+#readers-comments {
+	float: left;
+}
+
+.footer {
+	background-color: #ff9960;
+	color: white;
+	font-size: 25px;
+	text-align: center;
+	float: center;
+	overflow: auto;
+}
