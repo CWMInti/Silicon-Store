@@ -37,6 +37,11 @@ body {
 #about-us-button {
 }
 
+#items_table {
+	text-align: center;
+	float: center;
+}
+
 .page {
 	padding-top: 10px;
 	padding-bottom: 20px;
@@ -47,31 +52,7 @@ body {
 	float:center;
 }
 
-#page-of-day {
-	float: left;
-}
-
-#top-page {
-	float: left;
-}
-
-#readers-rating {
-	float: left;
-}
-
 #content {
-	float: left;
-}
-
-#your-rating {
-	float: left;
-}
-
-#your-comment {
-	float: left;
-}
-
-#readers-comments {
 	float: left;
 }
 
