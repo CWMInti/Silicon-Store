@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/style.css" />​
+	<script src="js/sign_up.js"></script>
 </head>
 
 <body>
@@ -14,12 +15,12 @@
 			<div class="row align-items-center">
 				<div class="col">
 					<div id="logo">
-						<img src="images/SiliconNewsGardenLogo.png" style="width:115px;height:115px;" alt="Silicon News Garden Logo">
+						<img src="images/SiliconStoreLogo.png" style="width:115px;height:115px;" alt="Silicon News Garden Logo">
 					</div>
 				</div>
 				<div class="col">
 					<div id="webname">
-						<h1>Silicon News Garden</h1>
+						<h1>Silicon Store</h1>
 					</div>
 				</div>
 				<div class="col">
@@ -39,8 +40,8 @@
 					</div>
 				</div>
 				<div class="col">
-					<div id="options-button">
-						<a href="Options.html">Options</a>
+					<div id="cart-button">
+						<a href="Cart.html">Cart</a>
 					</div>
 				</div>
 				<div class="col">
@@ -69,7 +70,7 @@
 							<label for="repassword">Repeat Password:</label><br>
 							<input type="text" id="repassword" name="repassword"><br><br>
 							
-							<input type="submit" value="Submit">
+							<input type="submit" value="submit" onclick="validate()">
 						</form>
 					</div>
 				</div>
@@ -78,7 +79,7 @@
 		<div class="footer">
 			<div class="row">
 				<div class="col">
-					<p>Silicon News Garden 2021</p>
+					<p>Silicon Store 2021</p>
 				</div>
 			</div>
 		</div>
