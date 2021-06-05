@@ -10,10 +10,19 @@ body {
 	font-size: 25px;
 }
 
+.h2 {
+	font-family: fantasy, Verdana;
+	text-align: center;
+	font-size: 40px;
+}
+
 #logo {
 }
 
 #webname {
+	font-family: fantasy, Verdana;
+	text-align: center;
+	font-size: 40px;
 }
 
 #account-selection {
@@ -53,7 +62,7 @@ body {
 }
 
 #content {
-	float: left;
+	text-align: center;
 }
 
 .footer {

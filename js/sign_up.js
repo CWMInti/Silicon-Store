@@ -9,7 +9,7 @@ function validate() {
 	
 	else if (repassword == password) {
 		alert ("Sign up successfully");
-		window.location.href = 'google.com';
+		window.location.href = "Login.html";
 		return false;
 	}
 

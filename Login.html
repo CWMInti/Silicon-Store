@@ -9,7 +9,7 @@
 	<script src="js/login.js"></script>
 </head>
 
-<body>
+<body onload="checkCookie()">
 	<div class="container">
 		<div class="header">
 			<div class="row align-items-center">
@@ -55,7 +55,7 @@
 		<div class="page">
 				<div class="row justify-content-center">
 					<div class="col-auto">
-						<h2 class="text-center">Log In</h2><br>
+						<h2 class="h2">Log In</h2><br>
 						
 						<form>
 							<label for="email">Email:</label><br>
@@ -64,14 +64,16 @@
 							<label for="password">Password:</label><br>
 							<input type="text" id="password" name="password"><br><br>
 							
-							<input type="submit" value="submit" onclick="validate()">
+							<input type="button" id="loginbtn" value="submit" onclick="validate()">
 						</form><br>
+						
+						<input type="button" id="logoutbtn" value="log out" onclick="deleteCookie()"><br>
 					</div>
 				</div>
 				
 				<div class="row justify-content-center">
 					<div class="col-auto">
-						<a href="SignUp.html">New? Sign up here</a>
+						<br><a href="SignUp.html">New? Sign up here</a>
 					</div>
 				</div>
 		</div>
