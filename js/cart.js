@@ -7,7 +7,7 @@ function SaveItem() {
 	doShowAll();
 	
 }
-//------------------------------------------------------------------------------
+
 //change an existing key=>value in the HTML5 storage
 function ModifyItem() {
 	var name1 = document.forms.ShoppingList.name.value;
@@ -25,20 +25,20 @@ function ModifyItem() {
 	
 	doShowAll();
 }
-//-------------------------------------------------------------------------
+
 //delete an existing key=>value from the HTML5 storage
 function RemoveItem() {
 	var name = document.forms.ShoppingList.name.value;
 	document.forms.ShoppingList.data.value = localStorage.removeItem(name);
 	doShowAll();
 }
-//-------------------------------------------------------------------------------------
+
 //restart the local storage
 function ClearAll() {
 	localStorage.clear();
 	doShowAll();
 }
-//--------------------------------------------------------------------------------------
+
 // dynamically populate the table with shopping list items
 //below step can be done via PHP and AJAX too. 
 function doShowAll() {
@@ -77,7 +77,7 @@ function CheckBrowser() {
 			return false;
 	}
 }
-//-------------------------------------------------
+
 /*
 You can extend this script by inserting data to database or adding payment processing API to shopping cart..
 */
