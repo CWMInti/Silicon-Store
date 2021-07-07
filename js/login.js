@@ -1,9 +1,9 @@
-function setCookie(cname,cvalue,exdays) {
-  var d = new Date();
-  d.setTime(d.getTime() + (exdays*24*60*60*1000));
-  var expires = "expires=" + d.toGMTString();
-  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-}
+// function setCookie(cname,cvalue,exdays) {
+  // var d = new Date();
+  // d.setTime(d.getTime() + (exdays*24*60*60*1000));
+  // var expires = "expires=" + d.toGMTString();
+  // document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+// }
 
 function getCookie(cname) {
   var name = cname + "=";
@@ -32,24 +32,34 @@ function checkCookie() {
 
 function deleteCookie() {
 	document.cookie = "userlogin=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+	alert ("Log out successfull");
+	window.location.href = "Homepage.php";
 }
 
 function validate() {
-	var email = document.getElementById("email").value;
+	var username = document.getElementById("username").value;
 	var password = document.getElementById("password").value;
 	
-	if (email == "" || password == "") {
-		alert ("Please enter email and password");
+	if (username == "" && password == "") {
+		alert ("Please enter username and password");
 	}
 	
-	else if (email == "form" && password == "123") {
-		setCookie("userlogin", email, 30);
-		alert ("Login successfully");
-		window.location.href = "Homepage.html";
-		return false;
+	else if (username == "") {
+		alert ("Please enter username");
 	}
+	
+	else if (password == "") {
+		alert ("Please enter password");
+	}
+	
+	// else if (username == "form" && password == "123") {
+		// setCookie("userlogin", username, 30);
+		// alert ("Login successfully");
+		// window.location.href = "Homepage.html";
+		// return false;
+	// }
 
-	else {
-		alert("Wrong email or password");
-	}
+	// else {
+		// alert("Wrong username or password");
+	// }
 }

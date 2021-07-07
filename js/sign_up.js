@@ -1,19 +1,36 @@
+function getCookie(cname) {
+  var name = cname + "=";
+  var decodedCookie = decodeURIComponent(document.cookie);
+  var ca = decodedCookie.split(';');
+  for(var i = 0; i < ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+
+function checkCookie() {
+  var login = getCookie("userlogin");
+  if (login != "") {
+    document.getElementById("signupbtn").disabled = true;
+  }
+}
+
 function validate() {
-	var email = document.getElementById("email").value;
+	var username = document.getElementById("username").value;
 	var password = document.getElementById("password").value;
 	var repassword = document.getElementById("repassword").value;
 	
-	if (email == "" || password == "" || repassword == "") {
+	if (username == "" || password == "" || repassword == "") {
 		alert ("Please fill in all the required fields");
 	}
-	
-	else if (repassword == password) {
-		alert ("Sign up successfully");
-		window.location.href = "Login.html";
-		return false;
-	}
 
-	else if (repassword != password){
+	else if (password != repassword){
 		alert("Password and repeat password don't match");
 	}
 }
